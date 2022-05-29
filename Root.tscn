@@ -35,6 +35,17 @@ mesh = SubResource( 3 )
 material/0 = null
 
 [node name="MeshInstance" type="MeshInstance" parent="MeshInstance/MeshInstance"]
-transform = Transform( 1, 0, 0, 0, 0.494776, 0.86902, 0, -0.86902, 0.494776, -3.98281, -8.96025, 15.239 )
+transform = Transform( 1, 0, 0, 0, 0.50783, 0.358244, 0, -0.861139, 0.186425, -3.98281, -7.76627, 15.9598 )
 mesh = SubResource( 3 )
 material/0 = null
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.4087, 0 )
+visible = false
+editor_only = true
+omni_range = 152.688
+
+[node name="OmniLight2" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2644, 4.81488, 8.21159 )
+shadow_enabled = true
+omni_range = 8.25247
