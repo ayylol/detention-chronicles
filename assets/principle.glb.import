@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/principle.escn-36d9c63a597081206b2cde19a3fe8b55.scn"
+path="res://.import/principle.glb-0ecc863f59618b16514650a051bbefa8.scn"
 
 [deps]
 
-source_file="res://principle.escn"
-dest_files=[ "res://.import/principle.escn-36d9c63a597081206b2cde19a3fe8b55.scn" ]
+source_file="res://assets/principle.glb"
+dest_files=[ "res://.import/principle.glb-0ecc863f59618b16514650a051bbefa8.scn" ]
 
 [params]
 
