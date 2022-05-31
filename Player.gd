@@ -4,7 +4,6 @@ export var speed = 10.0
 export var ground_acceleration = 10.0
 export var air_acceleration = 6.0
 export var jump = 5
-export var gravity = 9.81 # Eventually make global
 export var mouse_sensitivity = 0.5
 
 var fall = 0
@@ -92,10 +91,10 @@ func _physics_process(delta):
 	# movement
 	if is_on_floor():
 		acceleration = ground_acceleration
-		fall = jump if Input.is_action_pressed("jump") else 0
+		fall = jump if (Input.is_action_pressed("jump") and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED) else 0
 	else:
 		acceleration = air_acceleration
-	fall -= gravity * delta
+	fall -= Global.gravity * delta
 		
 	velocity = velocity.linear_interpolate(get_direction() * speed, acceleration * delta)
 	velocity = move_and_slide(velocity + (Vector3.UP * fall), Vector3.UP)
