@@ -1,0 +1,17 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type spatial;
+
+render_mode cull_disabled;
+
+uniform sampler2D tex;
+uniform vec2 texScale = vec2(1, 1);
+uniform float roughness;
+uniform float metallic;
+
+void fragment() {
+    ALBEDO = texture(tex, UV * texScale).rgb;
+    ROUGHNESS = roughness;
+    METALLIC = metallic;
+}"
