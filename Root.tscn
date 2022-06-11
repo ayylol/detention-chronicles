@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://principle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/School.tscn" type="PackedScene" id=3]
 
 [sub_resource type="BoxShape" id=1]
 
@@ -10,9 +11,10 @@
 [node name="Root" type="Spatial"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( -0.687468, 0, 0.726215, 0, 1, 0, -0.726215, 0, -0.687468, -3.0055, 1.03569, -6.89912 )
+transform = Transform( -0.687468, 0, 0.726215, 0, 1, 0, -0.726215, 0, -0.687468, -2.81988, 1.12836, -2.95376 )
 
 [node name="Floor" type="StaticBody" parent="."]
+visible = false
 
 [node name="CollisionShape" type="CollisionShape" parent="Floor"]
 transform = Transform( 23.3426, 0, 0, 0, 0.188185, 0, 0, 0, 21.5021, 0, 0, 0 )
@@ -37,3 +39,5 @@ omni_range = 8.25247
 
 [node name="Principle" parent="OmniLight2" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 24.9683, -4.62669, -1.2792 )
+
+[node name="School" parent="." instance=ExtResource( 3 )]

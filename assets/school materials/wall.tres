@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://assets/school materials/scale texture shader.tres" type="Shader" id=1]
+[ext_resource path="res://assets/school materials/schoolwall.JPG" type="Texture" id=2]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/texScale = Vector2( 10, 10 )
+shader_param/roughness = null
+shader_param/metallic = null
+shader_param/tex = ExtResource( 2 )
