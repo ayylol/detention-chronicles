@@ -254,7 +254,7 @@ material/1 = null
 material/2 = null
 
 [node name="BoneAttachment" type="BoneAttachment" parent="bat/Skeleton"]
-transform = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, -0.238078, -0.467199, -0.454852 )
+transform = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.238079, -0.467199, -0.454852 )
 bone_name = "lantern"
 
 [node name="OmniLight" type="OmniLight" parent="bat/Skeleton/BoneAttachment"]
@@ -266,7 +266,7 @@ omni_range = 11.8671
 omni_attenuation = 4.75682
 
 [node name="BoneAttachment2" type="BoneAttachment" parent="bat/Skeleton"]
-transform = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, -0.264725, -0.270082, -0.397125 )
+transform = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.264724, -0.270082, -0.397125 )
 bone_name = "bat pivot"
 
 [node name="KinematicBody" type="KinematicBody" parent="bat/Skeleton/BoneAttachment2"]
@@ -284,6 +284,7 @@ shape = SubResource( 6 )
 
 [node name="BatSwingPlayer" type="AudioStreamPlayer3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121283, 0 )
+bus = "SFX"
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
