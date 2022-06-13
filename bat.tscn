@@ -95,7 +95,7 @@ surfaces/2 = {
 }
 
 [sub_resource type="BoxShape" id=6]
-extents = Vector3( 0.285107, 0.382468, 0.33286 )
+extents = Vector3( 0.399265, 0.66421, 0.454445 )
 
 [sub_resource type="Animation" id=4]
 resource_name = "swing 1"
@@ -228,12 +228,12 @@ bones/3/name = "lantern"
 bones/3/parent = -1
 bones/3/rest = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.238079, -0.467199, -0.454852 )
 bones/3/enabled = true
-bones/3/bound_children = [ NodePath("BoneAttachment") ]
+bones/3/bound_children = [  ]
 bones/4/name = "bat pivot"
 bones/4/parent = -1
 bones/4/rest = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.264724, -0.270082, -0.397125 )
 bones/4/enabled = true
-bones/4/bound_children = [ NodePath("BoneAttachment2") ]
+bones/4/bound_children = [  ]
 bones/5/name = "ik bat end"
 bones/5/parent = -1
 bones/5/rest = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.362091, 0.180867, -0.200242 )
@@ -261,7 +261,7 @@ bone_name = "lantern"
 transform = Transform( 0.999719, 7.6538e-05, 0.0237197, -9.66095e-05, 1, 0.000845051, -0.0237196, -0.000847105, 0.999718, -0.0178645, -0.0266381, -0.00194049 )
 light_color = Color( 0.960784, 0.960784, 0.937255, 1 )
 light_energy = 0.222
-light_indirect_energy = 0.443
+light_bake_mode = 2
 omni_range = 11.8671
 omni_attenuation = 4.75682
 
@@ -275,7 +275,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape" type="CollisionShape" parent="bat/Skeleton/BoneAttachment2/KinematicBody"]
-transform = Transform( 0.942839, -0.167408, 0.145078, 0.212111, 0.974358, -0.279274, -0.0759382, 0.299905, 0.986592, 0.0303755, -0.193958, -0.240087 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.294505 )
 shape = SubResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
