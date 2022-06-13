@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_pot_break.wav-1ce7a19e7045b79435b5ec980a9eb3c8.sample"
+
+[deps]
+
+source_file="res://assets/audio/SFX_pot_break.wav"
+dest_files=[ "res://.import/SFX_pot_break.wav-1ce7a19e7045b79435b5ec980a9eb3c8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

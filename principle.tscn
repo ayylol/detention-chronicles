@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/glasses.material" type="Material" id=1]
 [ext_resource path="res://assets/suit acc.material" type="Material" id=2]
@@ -305,6 +305,9 @@ surfaces/0 = {
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.156386, 3.74058, 0.487135, 0.312771, 0.0858181, 1.00136e-05 ) ],
 "vertex_count": 24
 }
+
+[sub_resource type="Animation" id=11]
+length = 0.001
 
 [sub_resource type="Animation" id=7]
 resource_name = "flappy hand walk"
@@ -631,6 +634,23 @@ tracks/45/loop_wrap = true
 tracks/45/imported = false
 tracks/45/enabled = true
 tracks/45/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/46/type = "method"
+tracks/46/path = NodePath("..")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/keys = {
+"times": PoolRealArray( 0.164544, 0.650845 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_footstep"
+}, {
+"args": [  ],
+"method": "play_footstep"
+} ]
+}
 
 [sub_resource type="Animation" id=8]
 resource_name = "walk"
@@ -1062,6 +1082,23 @@ tracks/60/loop_wrap = true
 tracks/60/imported = false
 tracks/60/enabled = true
 tracks/60/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/61/type = "method"
+tracks/61/path = NodePath("..")
+tracks/61/interp = 1
+tracks/61/loop_wrap = true
+tracks/61/imported = false
+tracks/61/enabled = true
+tracks/61/keys = {
+"times": PoolRealArray( 0.149882, 0.648681 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_footstep"
+}, {
+"args": [  ],
+"method": "play_footstep"
+} ]
+}
 
 [sub_resource type="Animation" id=9]
 resource_name = "walk002"
@@ -1388,6 +1425,23 @@ tracks/45/loop_wrap = true
 tracks/45/imported = false
 tracks/45/enabled = true
 tracks/45/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/46/type = "method"
+tracks/46/path = NodePath("..")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/keys = {
+"times": PoolRealArray( 0.14827, 0.648681 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_footstep"
+}, {
+"args": [  ],
+"method": "play_footstep"
+} ]
+}
 
 [sub_resource type="CapsuleShape" id=10]
 radius = 0.574533
@@ -1738,6 +1792,7 @@ skin = SubResource( 2 )
 material/0 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="principle"]
+anims/RESET = SubResource( 11 )
 "anims/flappy hand walk" = SubResource( 7 )
 anims/walk = SubResource( 8 )
 anims/walk002 = SubResource( 9 )
@@ -1746,8 +1801,10 @@ anims/walk002 = SubResource( 9 )
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0958381, 1.88118, 0 )
 shape = SubResource( 10 )
 
+<<<<<<< HEAD
 [node name="MoveTimer" type="Timer" parent="."]
 wait_time = 0.1
 autostart = true
 
 [connection signal="timeout" from="MoveTimer" to="." method="_on_MoveTimer_timeout"]
+[node name="FootstepPlayer" type="AudioStreamPlayer3D" parent="."]

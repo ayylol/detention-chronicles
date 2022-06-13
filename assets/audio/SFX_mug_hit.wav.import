@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_mug_hit.wav-442b5db7e04c61a8991d976b0c0b8991.sample"
+
+[deps]
+
+source_file="res://assets/audio/SFX_mug_hit.wav"
+dest_files=[ "res://.import/SFX_mug_hit.wav-442b5db7e04c61a8991d976b0c0b8991.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
