@@ -53,6 +53,8 @@ func move_to(target_pos):
 func _on_MoveTimer_timeout():
 	move_to(_target.global_transform.origin)
 
+
+# plays a random footstep with a random playback rate
 func play_footstep():
 	var footstep_index = randi() % FOOTSTEP.size()
 	if footstep_index == last_footstep_index:
