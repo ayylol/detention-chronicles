@@ -1,11 +1,10 @@
 extends Spatial
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+
+var currently_swinging = false
 
 onready var batanimation = $AnimationPlayer
-var swingonestate = true  
+var swingonestate = true
 
 
 # audio-related stuff - begin
@@ -13,25 +12,25 @@ var swingonestate = true
 onready var bat_swing_player = $BatSwingPlayer
 
 const BAT_SWING = {
-	0: preload("res://assets/audio/SFX_bat_swing_R-L.wav"),
-	1: preload("res://assets/audio/SFX_bat_swing_L-R.wav")
+	0: preload("res://assets/audio/SFX_bat_swing_L-R.wav"),
+	1: preload("res://assets/audio/SFX_bat_swing_R-L.wav")
 }
 
 # audio-related stuff - end
 
 # Called when the node enters the scene tree for the first time.
 func _input(event):
+	if not currently_swinging:
+		if swingonestate == true:
+			if event.is_action_pressed('hit'):
+				batanimation.play("swing 1")
+				swingonestate = false
+		else:
+			if event.is_action_pressed('hit'):
+				batanimation.play("swing 2")
+				swingonestate = true
 
-	if swingonestate == true:
-		if event.is_action_pressed('hit'): 
-			batanimation.play("swing 1")
-			swingonestate = false
-	else:
-		if event.is_action_pressed('hit'): 
-			batanimation.play("swing 2")
-			swingonestate = true
-	
-	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
@@ -42,8 +41,15 @@ func play_bat_swing_LtoR():
 	bat_swing_player.set_stream(BAT_SWING[0])
 	bat_swing_player.set_pitch_scale(rand_range(0.9, 1.1))
 	bat_swing_player.play()
-	
+
 func play_bat_swing_RtoL():
 	bat_swing_player.set_stream(BAT_SWING[1])
 	bat_swing_player.set_pitch_scale(rand_range(0.9, 1.1))
 	bat_swing_player.play()
+	
+func _on_AnimationPlayer_animation_started(anim_name):
+	currently_swinging = true
+	$Timer.start(0.4)
+
+func _on_Timer_timeout():
+	currently_swinging = false
