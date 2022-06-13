@@ -135,6 +135,20 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0666667, 1, 0.0298051, -0.107646, 0.0195906, 0, 0, 0, 1, 1, 1, 1, 0.133333, 1, 0.011933, -0.253445, 0.0151432, 0, 0, 0, 1, 1, 1, 1, 0.2, 1, -0.0738319, -0.357931, -0.0914458, 0, 0, 0, 1, 1, 1, 1, 0.266667, 1, -0.29267, -0.43502, -0.471184, 0, 0, 0, 1, 1, 1, 1, 0.333333, 1, -0.696686, -0.442003, -0.534704, 0, 0, 0, 1, 1, 1, 1, 0.4, 1, -0.774952, -0.368884, -0.00985847, 0, 0, 0, 1, 1, 1, 1, 0.466667, 1, -0.744506, -0.160624, 0.0692682, 0, 0, 0, 1, 1, 1, 1, 0.533333, 1, -0.702747, -0.00665483, -0.0654146, 0, 0, 0, 1, 1, 1, 1, 0.6, 1, -0.724181, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.766667, 1, -0.724181, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/5/type = "method"
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_bat_swing_RtoL"
+} ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "swing 2"
@@ -174,6 +188,20 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = PoolRealArray( 0, 1, -0.724181, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0666667, 1, -0.753987, -0.107646, 0.0195906, 0, 0, 0, 1, 1, 1, 1, 0.133333, 1, -0.736115, -0.253445, 0.0151432, 0, 0, 0, 1, 1, 1, 1, 0.2, 1, -0.650349, -0.357931, -0.0914458, 0, 0, 0, 1, 1, 1, 1, 0.266667, 1, -0.431512, -0.43502, -0.471184, 0, 0, 0, 1, 1, 1, 1, 0.333333, 1, -0.0274956, -0.442003, -0.534704, 0, 0, 0, 1, 1, 1, 1, 0.4, 1, 0.0507701, -0.368884, -0.00985847, 0, 0, 0, 1, 1, 1, 1, 0.466667, 1, 0.0203243, -0.160624, 0.0692682, 0, 0, 0, 1, 1, 1, 1, 0.533333, 1, -0.0214346, -0.00665483, -0.0654146, 0, 0, 0, 1, 1, 1, 1, 0.6, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.766667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/5/type = "method"
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_bat_swing_LtoR"
+} ]
+}
 
 [node name="bat" type="Spatial"]
 script = ExtResource( 5 )
@@ -253,3 +281,6 @@ shape = SubResource( 6 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/swing 1" = SubResource( 4 )
 "anims/swing 2" = SubResource( 5 )
+
+[node name="BatSwingPlayer" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.381386, -0.434627 )

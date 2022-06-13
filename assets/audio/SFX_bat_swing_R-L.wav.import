@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_bat_swing_R-L.wav-22f8a5731116602a0aed9fe1875bf228.sample"
+
+[deps]
+
+source_file="res://assets/audio/SFX_bat_swing_R-L.wav"
+dest_files=[ "res://.import/SFX_bat_swing_R-L.wav-22f8a5731116602a0aed9fe1875bf228.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
