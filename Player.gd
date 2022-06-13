@@ -1,5 +1,19 @@
 extends KinematicBody
 
+# audio-related stuff - begin
+
+onready var footstep_timer = $FootstepTimer
+onready var footstep_player = $FootstepPlayer
+
+var last_footstep_index = 0
+
+const FOOTSTEP = {
+	0: preload("res://assets/audio/footsteps/SFX_player_footstep_1.wav"),
+	1: preload("res://assets/audio/footsteps/SFX_player_footstep_2.wav")
+}
+
+# audio-related stuff - end
+
 export var speed = 10.0
 export var ground_acceleration = 10.0
 export var air_acceleration = 6.0
@@ -99,3 +113,20 @@ func _physics_process(delta):
 	velocity = velocity.linear_interpolate(get_direction() * speed, acceleration * delta)
 	velocity = move_and_slide(velocity + (Vector3.UP * fall), Vector3.UP)
 	velocity.y = 0
+
+func play_footstep():
+	var footstep_index = randi() % FOOTSTEP.size()
+	if footstep_index == last_footstep_index:
+		footstep_index = (footstep_index + 1) % FOOTSTEP.size()
+	
+	footstep_player.set_stream(FOOTSTEP[footstep_index])
+	footstep_player.set_pitch_scale(rand_range(0.8, 1.2))
+	footstep_player.play()
+	
+	last_footstep_index = footstep_index
+
+
+func _on_FootstepTimer_timeout():
+	if is_on_floor():
+		if not forward_or_backward == 0 or not left_or_right == 0:
+			play_footstep()
