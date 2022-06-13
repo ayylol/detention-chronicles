@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_principal_footstep_3.wav-aee8d5a04a28e1b5bee034967c3cecdf.sample"
+path="res://.import/SFX_principal_footstep_3.wav-b18469b027e83516aad539e1a2175675.sample"
 
 [deps]
 
-source_file="res://assets/Audio/Footsteps/SFX_principal_footstep_3.wav"
-dest_files=[ "res://.import/SFX_principal_footstep_3.wav-aee8d5a04a28e1b5bee034967c3cecdf.sample" ]
+source_file="res://assets/audio/footsteps/SFX_principal_footstep_3.wav"
+dest_files=[ "res://.import/SFX_principal_footstep_3.wav-b18469b027e83516aad539e1a2175675.sample" ]
 
 [params]
 

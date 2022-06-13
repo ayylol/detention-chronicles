@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_chair_hit.wav-07c6a3b2c5b9bcfec6ec4dd7776f3b9d.sample"
+path="res://.import/SFX_chair_hit.wav-21453ee734dd6761ffc81f3425299c43.sample"
 
 [deps]
 
-source_file="res://assets/Audio/SFX_chair_hit.wav"
-dest_files=[ "res://.import/SFX_chair_hit.wav-07c6a3b2c5b9bcfec6ec4dd7776f3b9d.sample" ]
+source_file="res://assets/audio/SFX_chair_hit.wav"
+dest_files=[ "res://.import/SFX_chair_hit.wav-21453ee734dd6761ffc81f3425299c43.sample" ]
 
 [params]
 

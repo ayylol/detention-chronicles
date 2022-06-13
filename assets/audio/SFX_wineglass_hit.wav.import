@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_wineglass_hit.wav-a799d6a8543e2145703b9912ae742f69.sample"
+path="res://.import/SFX_wineglass_hit.wav-c456225817d35a7cb22c1e82f6f628de.sample"
 
 [deps]
 
-source_file="res://assets/Audio/SFX_wineglass_hit.wav"
-dest_files=[ "res://.import/SFX_wineglass_hit.wav-a799d6a8543e2145703b9912ae742f69.sample" ]
+source_file="res://assets/audio/SFX_wineglass_hit.wav"
+dest_files=[ "res://.import/SFX_wineglass_hit.wav-c456225817d35a7cb22c1e82f6f628de.sample" ]
 
 [params]
 

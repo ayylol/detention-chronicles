@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_mug_hit.wav-6416cb28c8c66542db131dc657b188b0.sample"
+path="res://.import/SFX_mug_hit.wav-442b5db7e04c61a8991d976b0c0b8991.sample"
 
 [deps]
 
-source_file="res://assets/Audio/SFX_mug_hit.wav"
-dest_files=[ "res://.import/SFX_mug_hit.wav-6416cb28c8c66542db131dc657b188b0.sample" ]
+source_file="res://assets/audio/SFX_mug_hit.wav"
+dest_files=[ "res://.import/SFX_mug_hit.wav-442b5db7e04c61a8991d976b0c0b8991.sample" ]
 
 [params]
 

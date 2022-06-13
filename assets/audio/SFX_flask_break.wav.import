@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_flask_break.wav-4764893030a0e1a32c89ddba093c28f7.sample"
+path="res://.import/SFX_flask_break.wav-70b1e48e670dbd775292e0d889431e82.sample"
 
 [deps]
 
-source_file="res://assets/Audio/SFX_flask_break.wav"
-dest_files=[ "res://.import/SFX_flask_break.wav-4764893030a0e1a32c89ddba093c28f7.sample" ]
+source_file="res://assets/audio/SFX_flask_break.wav"
+dest_files=[ "res://.import/SFX_flask_break.wav-70b1e48e670dbd775292e0d889431e82.sample" ]
 
 [params]
 

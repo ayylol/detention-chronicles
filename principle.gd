@@ -7,10 +7,10 @@ onready var anim_player = $principle/AnimationPlayer
 onready var footstep_player = $FootstepPlayer
 
 const FOOTSTEP = {
-	0: preload("res://assets/Audio/Footsteps/SFX_principal_footstep_1.wav"),
-	1: preload("res://assets/Audio/Footsteps/SFX_principal_footstep_2.wav"),
-	2: preload("res://assets/Audio/Footsteps/SFX_principal_footstep_3.wav"),
-	3: preload("res://assets/Audio/Footsteps/SFX_principal_footstep_4.wav")
+	0: preload("res://assets/audio/footsteps/SFX_principal_footstep_1.wav"),
+	1: preload("res://assets/audio/footsteps/SFX_principal_footstep_2.wav"),
+	2: preload("res://assets/audio/footsteps/SFX_principal_footstep_3.wav"),
+	3: preload("res://assets/audio/footsteps/SFX_principal_footstep_4.wav")
 }
 
 var last_footstep_index = 0
