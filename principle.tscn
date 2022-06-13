@@ -1801,7 +1801,8 @@ anims/walk002 = SubResource( 9 )
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0958381, 1.88118, 0 )
 shape = SubResource( 10 )
 
-<<<<<<< HEAD
+[node name="FootstepPlayer" type="AudioStreamPlayer3D" parent="."]
+
 [node name="MoveTimer" type="Timer" parent="."]
 wait_time = 0.1
 autostart = true

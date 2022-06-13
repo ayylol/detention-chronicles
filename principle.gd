@@ -32,8 +32,7 @@ onready var current_speed = max_speed
 func _ready():	
 	for point in $"../NavMesh/PointsOfInterest".get_children():
 		points_of_interest.push_back(point)
-		
-	#_target = points_of_interest[0]
+	
 	_target = Player # start moving towards player
 	anim_player.play("walk")
 
@@ -50,10 +49,6 @@ func move_to(target_pos):
 	look_at_from_position(global_transform.origin, Vector3(target_pos.x, global_transform.origin.y, target_pos.z), Vector3.UP)
 	path_node = 0
 
-func _on_MoveTimer_timeout():
-	move_to(_target.global_transform.origin)
-
-
 # plays a random footstep with a random playback rate
 func play_footstep():
 	var footstep_index = randi() % FOOTSTEP.size()
@@ -65,3 +60,6 @@ func play_footstep():
 	footstep_player.play()
 	
 	last_footstep_index = footstep_index
+
+func _on_MoveTimer_timeout():
+	move_to(_target.global_transform.origin)
