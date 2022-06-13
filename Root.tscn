@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://principle.tscn" type="PackedScene" id=2]
@@ -6,41 +6,12 @@
 [ext_resource path="res://chairpaint.tscn" type="PackedScene" id=4]
 [ext_resource path="res://studentdesk2color.glb" type="PackedScene" id=5]
 
-[sub_resource type="BoxShape" id=1]
-
-[sub_resource type="CubeMesh" id=2]
+[sub_resource type="NavigationMesh" id=3]
 
 [node name="Root" type="Spatial"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( -0.687468, 0, 0.726215, 0, 1, 0, -0.726215, 0, -0.687468, -2.81988, 1.12836, -2.95376 )
-
-[node name="Floor" type="StaticBody" parent="."]
-visible = false
-
-[node name="CollisionShape" type="CollisionShape" parent="Floor"]
-transform = Transform( 23.3426, 0, 0, 0, 0.188185, 0, 0, 0, 21.5021, 0, 0, 0 )
-shape = SubResource( 1 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Floor/CollisionShape"]
-transform = Transform( 0.999893, 0, -0.01344, 0, 1, 0, 0.0158393, 0, 0.999893, 0, 0, 0 )
-mesh = SubResource( 2 )
-skeleton = NodePath("../..")
-material/0 = null
-
-[node name="OmniLight" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.4087, 0 )
-visible = false
-editor_only = true
-omni_range = 152.688
-
-[node name="OmniLight2" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2644, 4.81488, 8.21159 )
-shadow_enabled = true
-omni_range = 8.25247
-
-[node name="Principle" parent="OmniLight2" instance=ExtResource( 2 )]
-transform = Transform( -0.0144502, -4.81867e-05, 0.999896, -0.00201819, 0.999998, 1.90442e-05, -0.999894, -0.0020177, -0.0144503, 24.8695, -4.67878, -1.01831 )
 
 [node name="School" parent="." instance=ExtResource( 3 )]
 
@@ -72,11 +43,21 @@ transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 60.6598, 
 [node name="studentdesk2color" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1.03603, 2.59604e-05, 0.000573576, -2.38569e-05, 1.1389, -0.00257077, -0.000517567, 0.00242047, 1.31103, 62.1396, 0.974345, -1.59593 )
 
-[node name="r" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1.03508, 2.59364e-05, 0.000573045, -2.38348e-05, 1.13784, -0.00256839, -0.000517088, 0.00241823, 1.30981, 61.8436, 0.907626, 1.00675 )
-
 [node name="studentdesk2color2" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1.03603, 2.59604e-05, 0.000573576, -2.38569e-05, 1.1389, -0.00257077, -0.000517567, 0.00242047, 1.31103, 58.7597, 1.04951, -2.52107 )
 
 [node name="studentdesk2color3" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1.03603, 2.59604e-05, 0.000573576, -2.38569e-05, 1.1389, -0.00257077, -0.000517567, 0.00242047, 1.31103, 59.3321, 1.33069, -6.27623 )
+
+[node name="studentdesk2color4" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1.03508, 2.59364e-05, 0.000573045, -2.38348e-05, 1.13784, -0.00256839, -0.000517088, 0.00241823, 1.30981, 61.8436, 0.907626, 1.00675 )
+
+[node name="Navigation" type="Navigation" parent="."]
+
+[node name="NavMesh" type="NavigationMeshInstance" parent="Navigation"]
+navmesh = SubResource( 3 )
+
+[node name="PointsOfInterest" type="Spatial" parent="Navigation/NavMesh"]
+
+[node name="Principle" parent="Navigation" instance=ExtResource( 2 )]
+transform = Transform( -0.0144502, -4.81867e-05, 0.999896, -0.00201819, 0.999998, 1.90442e-05, -0.999894, -0.0020177, -0.0144503, 11.6051, 0.1361, 7.19328 )
