@@ -1808,3 +1808,5 @@ wait_time = 0.1
 autostart = true
 
 [connection signal="timeout" from="MoveTimer" to="." method="_on_MoveTimer_timeout"]
+[node name="FootstepPlayer" type="AudioStreamPlayer3D" parent="."]
+unit_db = 4.034

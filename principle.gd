@@ -49,6 +49,7 @@ func move_to(target_pos):
 	look_at_from_position(global_transform.origin, Vector3(target_pos.x, global_transform.origin.y, target_pos.z), Vector3.UP)
 	path_node = 0
 
+# plays a random footstep with a random playback rate
 func play_footstep():
 	var footstep_index = randi() % FOOTSTEP.size()
 	if footstep_index == last_footstep_index:
@@ -59,7 +60,6 @@ func play_footstep():
 	footstep_player.play()
 	
 	last_footstep_index = footstep_index
-
 
 func _on_MoveTimer_timeout():
 	move_to(_target.global_transform.origin)
