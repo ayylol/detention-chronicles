@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_principal_chair_hit.wav-fc5091a2092f7e5075437c26e27b501e.sample"
+
+[deps]
+
+source_file="res://assets/Audio/SFX_principal_chair_hit.wav"
+dest_files=[ "res://.import/SFX_principal_chair_hit.wav-fc5091a2092f7e5075437c26e27b501e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

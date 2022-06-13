@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_chair_break.wav-b3483330051818d4f7e5d8e55a8c808e.sample"
+
+[deps]
+
+source_file="res://assets/Audio/SFX_chair_break.wav"
+dest_files=[ "res://.import/SFX_chair_break.wav-b3483330051818d4f7e5d8e55a8c808e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

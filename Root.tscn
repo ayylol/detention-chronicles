@@ -38,6 +38,6 @@ shadow_enabled = true
 omni_range = 8.25247
 
 [node name="Principle" parent="OmniLight2" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 24.9683, -4.62669, -1.2792 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.2854, -4.62669, -8.78724 )
 
 [node name="School" parent="." instance=ExtResource( 3 )]
