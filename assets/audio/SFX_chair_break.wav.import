@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_chair_break.wav-b3483330051818d4f7e5d8e55a8c808e.sample"
+path="res://.import/SFX_chair_break.wav-858b47aaae9a1cee399d951efac7e67b.sample"
 
 [deps]
 
-source_file="res://assets/Audio/SFX_chair_break.wav"
-dest_files=[ "res://.import/SFX_chair_break.wav-b3483330051818d4f7e5d8e55a8c808e.sample" ]
+source_file="res://assets/audio/SFX_chair_break.wav"
+dest_files=[ "res://.import/SFX_chair_break.wav-858b47aaae9a1cee399d951efac7e67b.sample" ]
 
 [params]
 

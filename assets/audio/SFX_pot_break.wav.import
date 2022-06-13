@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_pot_break.wav-1d8c67373996d6d99f9e180cdf9ef189.sample"
+path="res://.import/SFX_pot_break.wav-1ce7a19e7045b79435b5ec980a9eb3c8.sample"
 
 [deps]
 
-source_file="res://assets/Audio/SFX_pot_break.wav"
-dest_files=[ "res://.import/SFX_pot_break.wav-1d8c67373996d6d99f9e180cdf9ef189.sample" ]
+source_file="res://assets/audio/SFX_pot_break.wav"
+dest_files=[ "res://.import/SFX_pot_break.wav-1ce7a19e7045b79435b5ec980a9eb3c8.sample" ]
 
 [params]
 

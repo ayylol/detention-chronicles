@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SFX_bat_contact.wav-c303cbaa34701fc9617f5250a3b34a12.sample"
+path="res://.import/SFX_bat_contact.wav-73eba231fd83534516bd8f8e5329abfe.sample"
 
 [deps]
 
-source_file="res://assets/Audio/SFX_bat_contact.wav"
-dest_files=[ "res://.import/SFX_bat_contact.wav-c303cbaa34701fc9617f5250a3b34a12.sample" ]
+source_file="res://assets/audio/SFX_bat_contact.wav"
+dest_files=[ "res://.import/SFX_bat_contact.wav-73eba231fd83534516bd8f8e5329abfe.sample" ]
 
 [params]
 
