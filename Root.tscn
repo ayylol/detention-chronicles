@@ -11,7 +11,7 @@
 [node name="Root" type="Spatial"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( -0.687468, 0, 0.726215, 0, 1, 0, -0.726215, 0, -0.687468, -2.81988, 1.12836, -2.95376 )
+transform = Transform( -0.687468, 0, 0.726215, 0, 1, 0, -0.726215, 0, -0.687468, 62.6996, 1.12836, -9.23932 )
 
 [node name="School" parent="." instance=ExtResource( 3 )]
 
