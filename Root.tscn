@@ -45,7 +45,6 @@ one_shot = true
 
 [node name="FadeOut" type="Tween" parent="Music"]
 
-[connection signal="timeout" from="Music/NoteTimer" to="Music" method="_on_NoteTimer_timeout"]
 [node name="Props" type="Spatial" parent="."]
 
 [node name="RigidBody" parent="Props" instance=ExtResource( 4 )]
@@ -84,3 +83,5 @@ transform = Transform( 1.03603, 2.59604e-05, 0.000573576, -2.38569e-05, 1.1389, 
 
 [node name="studentdesk2color4" parent="Props" instance=ExtResource( 5 )]
 transform = Transform( 1.03508, 2.59364e-05, 0.000573045, -2.38348e-05, 1.13784, -0.00256839, -0.000517088, 0.00241823, 1.30981, 61.8436, 0.907626, 1.00675 )
+
+[connection signal="timeout" from="Music/NoteTimer" to="Music" method="_on_NoteTimer_timeout"]
