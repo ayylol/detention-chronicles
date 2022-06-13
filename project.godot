@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Detention-chronicles"
-run/main_scene="res://Root.tscn"
+run/main_scene="res://AI_TestScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
