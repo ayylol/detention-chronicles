@@ -4,7 +4,7 @@ extends Spatial
 var currently_swinging = false
 
 onready var batanimation = $AnimationPlayer
-var swingonestate = true
+var is_first_swing = true
 
 
 # audio-related stuff - begin
@@ -20,15 +20,12 @@ const BAT_SWING = {
 
 # Called when the node enters the scene tree for the first time.
 func _input(event):
-	if not currently_swinging:
-		if swingonestate == true:
-			if event.is_action_pressed('hit'):
-				batanimation.play("swing 1")
-				swingonestate = false
+	if not currently_swinging and event.is_action_pressed('hit'):
+		if is_first_swing:
+			batanimation.play("swing 1")
 		else:
-			if event.is_action_pressed('hit'):
-				batanimation.play("swing 2")
-				swingonestate = true
+			batanimation.play("swing 2")
+		is_first_swing = not is_first_swing
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

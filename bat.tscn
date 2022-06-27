@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://bat.material" type="Material" id=1]
 [ext_resource path="res://handle.material" type="Material" id=2]
@@ -93,9 +93,6 @@ surfaces/2 = {
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.00159833, -0.185722, -0.00184541, 0.0031965, 0.0473027, 0.00369082 ), AABB( -0.00159819, -0.185722, -0.00184541, 0.00319636, 0.00363791, 0.00369082 ) ],
 "vertex_count": 312
 }
-
-[sub_resource type="BoxShape" id=6]
-extents = Vector3( 0.399265, 0.66421, 0.454445 )
 
 [sub_resource type="Animation" id=4]
 resource_name = "swing 1"
@@ -228,7 +225,7 @@ bones/3/name = "lantern"
 bones/3/parent = -1
 bones/3/rest = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.238079, -0.467199, -0.454852 )
 bones/3/enabled = true
-bones/3/bound_children = [  ]
+bones/3/bound_children = [ NodePath("BoneAttachment") ]
 bones/4/name = "bat pivot"
 bones/4/parent = -1
 bones/4/rest = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.264724, -0.270082, -0.397125 )
@@ -264,19 +261,6 @@ light_energy = 0.222
 light_bake_mode = 2
 omni_range = 11.8671
 omni_attenuation = 4.75682
-
-[node name="BoneAttachment2" type="BoneAttachment" parent="bat/Skeleton"]
-transform = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.264724, -0.270082, -0.397125 )
-bone_name = "bat pivot"
-
-[node name="KinematicBody" type="KinematicBody" parent="bat/Skeleton/BoneAttachment2"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00407207, 0.00357777, 0.00618911 )
-collision_layer = 2
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="bat/Skeleton/BoneAttachment2/KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.294505 )
-shape = SubResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/swing 1" = SubResource( 4 )
