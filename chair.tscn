@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://assets/Material_002.material" type="Material" id=1]
+[ext_resource path="res://assets/Material_001.material" type="Material" id=1]
 [ext_resource path="res://assets/Material.material" type="Material" id=2]
-[ext_resource path="res://assets/Material_001.material" type="Material" id=3]
+[ext_resource path="res://assets/Material_002.material" type="Material" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "chairpaint_Cube"
@@ -25,7 +25,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 2194711,
 "index_count": 12,
-"material": ExtResource( 3 ),
+"material": ExtResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 8
@@ -37,7 +37,7 @@ surfaces/2 = {
 "blend_shape_data": [  ],
 "format": 2194711,
 "index_count": 270,
-"material": ExtResource( 1 ),
+"material": ExtResource( 3 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 145
@@ -49,14 +49,12 @@ extents = Vector3( 0.817302, 0.839654, 0.827317 )
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.0806587, 0.750206, 0.760428 )
 
-[node name="RigidBody" type="RigidBody"]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, -0.00891352, 0.6463, -0.136193 )
+[node name="chair" type="RigidBody"]
 collision_layer = 3
 collision_mask = 3
-mass = 1198.3
 
 [node name="Cube" type="MeshInstance" parent="."]
-transform = Transform( 0.848266, 0, 0, 0, 0.081818, 0, 0, 0, 0.774916, -0.00219584, 0.0126131, 0.000954747 )
+transform = Transform( 0.346277, 0, 0, 0, 0.0269387, 0, 0, 0, 0.29971, -0.0256193, 0.513219, -0.00646158 )
 mesh = SubResource( 1 )
 skeleton = NodePath("")
 material/0 = null
@@ -64,9 +62,9 @@ material/1 = null
 material/2 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0101526, -0.654908, -0.0135198 )
+transform = Transform( 0.408217, 0, 0, 0, 0.329251, 0, 0, 0, 0.386765, -0.0288674, 0.293437, -0.0120598 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.805461, 0.944506, -0.0232328 )
+transform = Transform( 0.408217, 0, 0, 0, 0.329251, 0, 0, 0, 0.386765, -0.353526, 0.820046, -0.0158165 )
 shape = SubResource( 3 )

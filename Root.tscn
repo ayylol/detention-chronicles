@@ -3,8 +3,8 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://principle.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/School.tscn" type="PackedScene" id=3]
-[ext_resource path="res://chairpaint.tscn" type="PackedScene" id=4]
-[ext_resource path="res://studentdesk2color.glb" type="PackedScene" id=5]
+[ext_resource path="res://chair.tscn" type="PackedScene" id=4]
+[ext_resource path="res://StudentDesk.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Music.gd" type="Script" id=6]
 
 [sub_resource type="NavigationMesh" id=3]
@@ -47,41 +47,19 @@ one_shot = true
 
 [node name="Props" type="Spatial" parent="."]
 
-[node name="RigidBody" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 57.7676, 0.877571, -2.54039 )
-mass = 6.99
+[node name="chair" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.268, 0.654166, -2.53201 )
 
-[node name="RigidBody2" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 58.5282, 0.661378, 1.0313 )
+[node name="chair2" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.268, 0.654166, -4.81396 )
 
-[node name="RigidBody3" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 57.8235, 0.64957, -5.93317 )
+[node name="chair3" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.268, 0.654166, -7.44052 )
 
-[node name="RigidBody4" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 57.8127, 0.6836, -8.43993 )
+[node name="chair4" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.268, 0.654166, -0.315328 )
 
-[node name="RigidBody5" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 60.7506, 0.690204, -8.00686 )
-
-[node name="RigidBody6" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 60.9849, 0.772502, -5.04876 )
-
-[node name="RigidBody7" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 61.0051, 0.813445, -1.35806 )
-
-[node name="RigidBody8" parent="Props" instance=ExtResource( 4 )]
-transform = Transform( 0.443072, 0, 0, 0, 0.474552, 0, 0, 0, 0.524721, 60.6598, 0.829537, 0.956585 )
-
-[node name="studentdesk2color" parent="Props" instance=ExtResource( 5 )]
-transform = Transform( 1.03603, 2.59604e-05, 0.000573576, -2.38569e-05, 1.1389, -0.00257077, -0.000517567, 0.00242047, 1.31103, 62.1396, 0.974345, -1.59593 )
-
-[node name="studentdesk2color2" parent="Props" instance=ExtResource( 5 )]
-transform = Transform( 1.03603, 2.59604e-05, 0.000573576, -2.38569e-05, 1.1389, -0.00257077, -0.000517567, 0.00242047, 1.31103, 58.7597, 1.04951, -2.52107 )
-
-[node name="studentdesk2color3" parent="Props" instance=ExtResource( 5 )]
-transform = Transform( 1.03603, 2.59604e-05, 0.000573576, -2.38569e-05, 1.1389, -0.00257077, -0.000517567, 0.00242047, 1.31103, 59.3321, 1.33069, -6.27623 )
-
-[node name="studentdesk2color4" parent="Props" instance=ExtResource( 5 )]
-transform = Transform( 1.03508, 2.59364e-05, 0.000573045, -2.38348e-05, 1.13784, -0.00256839, -0.000517088, 0.00241823, 1.30981, 61.8436, 0.907626, 1.00675 )
+[node name="Desk" parent="Props" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 63.7227, 0.614948, -3.32622 )
 
 [connection signal="timeout" from="Music/NoteTimer" to="Music" method="_on_NoteTimer_timeout"]

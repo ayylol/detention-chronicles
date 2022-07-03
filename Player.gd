@@ -34,6 +34,7 @@ var _reset_lr = false
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$BatHitbox/CollisionShape.disabled = true
 
 func _input(event):
 	if (event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED):
@@ -130,3 +131,15 @@ func _on_FootstepTimer_timeout():
 	if is_on_floor():
 		if not forward_or_backward == 0 or not left_or_right == 0:
 			play_footstep()
+
+
+func _on_bat_hitbox_off():
+	$BatHitbox/CollisionShape.disabled = true
+
+
+func _on_bat_hitbox_on():
+	$BatHitbox/CollisionShape.disabled = false
+
+
+func _on_BatHitbox_body_entered(body):
+	print(body)
