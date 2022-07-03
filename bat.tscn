@@ -139,11 +139,17 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "play_bat_swing_RtoL"
+}, {
+"args": [  ],
+"method": "hitbox_on"
+}, {
+"args": [  ],
+"method": "hitbox_off"
 } ]
 }
 
@@ -192,11 +198,17 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "play_bat_swing_LtoR"
+}, {
+"args": [  ],
+"method": "hitbox_on"
+}, {
+"args": [  ],
+"method": "hitbox_off"
 } ]
 }
 
@@ -225,7 +237,7 @@ bones/3/name = "lantern"
 bones/3/parent = -1
 bones/3/rest = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.238079, -0.467199, -0.454852 )
 bones/3/enabled = true
-bones/3/bound_children = [ NodePath("BoneAttachment") ]
+bones/3/bound_children = [  ]
 bones/4/name = "bat pivot"
 bones/4/parent = -1
 bones/4/rest = Transform( 1, 0, 0, 0, -1, 0, 0, 0, -1, 0.264724, -0.270082, -0.397125 )
@@ -238,6 +250,7 @@ bones/5/enabled = true
 bones/5/bound_children = [  ]
 
 [node name="bat mesh" type="MeshInstance" parent="bat/Skeleton"]
+layers = 2
 mesh = SubResource( 1 )
 skin = SubResource( 2 )
 material/0 = null
@@ -259,6 +272,7 @@ transform = Transform( 0.999719, 7.6538e-05, 0.0237197, -9.66095e-05, 1, 0.00084
 light_color = Color( 0.960784, 0.960784, 0.937255, 1 )
 light_energy = 0.222
 light_bake_mode = 2
+light_cull_mask = 4294967293
 omni_range = 11.8671
 omni_attenuation = 4.75682
 

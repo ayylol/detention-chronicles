@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/studentdesk2color.glb-dce5380495a9a896d9ac1368a8daee87.scn"
+path="res://.import/studentdesk.glb-b8db682cb747c3e1529181d3c22b80e9.scn"
 
 [deps]
 
-source_file="res://studentdesk2color.glb"
-dest_files=[ "res://.import/studentdesk2color.glb-dce5380495a9a896d9ac1368a8daee87.scn" ]
+source_file="res://studentdesk.glb"
+dest_files=[ "res://.import/studentdesk.glb-b8db682cb747c3e1529181d3c22b80e9.scn" ]
 
 [params]
 

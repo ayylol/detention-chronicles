@@ -38,6 +38,9 @@ reverb_bus_uniformity = 0.2
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom1" index="0"]
 shape = SubResource( 2 )
 
+[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom1" index="1"]
+shape = SubResource( 2 )
+
 [node name="Classroom2" type="Area" parent="AudioAreas" index="2"]
 transform = Transform( 0.52616, 0, 0, 0, 1.80876, 0, 0, 0, 0.813732, 17.2126, 1.66564, 1.90248 )
 reverb_bus_enable = true
@@ -46,6 +49,9 @@ reverb_bus_amount = 0.4
 reverb_bus_uniformity = 0.18
 
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom2" index="0"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom2" index="1"]
 shape = SubResource( 2 )
 
 [node name="Classroom3" type="Area" parent="AudioAreas" index="3"]
@@ -58,6 +64,9 @@ reverb_bus_uniformity = 0.18
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom3" index="0"]
 shape = SubResource( 2 )
 
+[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom3" index="1"]
+shape = SubResource( 2 )
+
 [node name="Classroom4" type="Area" parent="AudioAreas" index="4"]
 transform = Transform( 1.43637, 0, 0, 0, 2.6967, 0, 0, 0, 1.95515, 58.1737, 2.49661, -3.46525 )
 reverb_bus_enable = true
@@ -66,6 +75,9 @@ reverb_bus_amount = 0.55
 reverb_bus_uniformity = 0.2
 
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom4" index="0"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom4" index="1"]
 shape = SubResource( 2 )
 
 [node name="Classroom5" type="Area" parent="AudioAreas" index="5"]
@@ -78,7 +90,49 @@ reverb_bus_uniformity = 0.29
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom5" index="0"]
 shape = SubResource( 2 )
 
-[node name="Connector" type="Area" parent="AudioAreas" index="6"]
+[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom5" index="1"]
+shape = SubResource( 2 )
+
+[node name="Classroom1" type="Area" parent="AudioAreas" index="6"]
+transform = Transform( 1, 0, 0, 0, 2.74879, 0, 0, 0, 0.922695, 0, 2.49661, 0 )
+reverb_bus_enable = true
+reverb_bus_amount = 0.2
+reverb_bus_uniformity = 0.29
+
+[node name="Classroom2" type="Area" parent="AudioAreas" index="7"]
+transform = Transform( 0.370657, 0, 0, 0, 1.80876, 0, 0, 0, 0.538813, 17.2126, 1.66564, 1.90248 )
+reverb_bus_enable = true
+reverb_bus_amount = 0.1
+reverb_bus_uniformity = 0.18
+
+[node name="Classroom3" type="Area" parent="AudioAreas" index="8"]
+transform = Transform( 0.375762, 0, 0, 0, 2.56325, 0, 0, 0, 0.862897, 37.0823, 2.49343, 0.357024 )
+reverb_bus_enable = true
+reverb_bus_amount = 0.17
+reverb_bus_uniformity = 0.18
+
+[node name="Classroom4" type="Area" parent="AudioAreas" index="9"]
+transform = Transform( 1.26884, 0, 0, 0, 2.6967, 0, 0, 0, 1.63842, 58.596, 2.49661, -3.46525 )
+reverb_bus_enable = true
+reverb_bus_amount = 0.45
+reverb_bus_uniformity = 0.29
+
+[node name="Classroom5" type="Area" parent="AudioAreas" index="10"]
+transform = Transform( 0.995118, 0, 0, 0, 2.69141, 0, 0, 0, 0.633703, 33.4553, 2.57943, 14.3433 )
+reverb_bus_enable = true
+reverb_bus_amount = 0.3
+reverb_bus_uniformity = 0.29
+
+[node name="Hallway" type="Area" parent="AudioAreas" index="11"]
+transform = Transform( 4.66507, 0, 0, 0, 3.53804, 0, 0, 0, 0.665288, 33.3616, 3.45003, 7.8 )
+reverb_bus_enable = true
+reverb_bus_amount = 0.5
+reverb_bus_uniformity = 0.25
+
+[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Hallway" index="0"]
+shape = SubResource( 2 )
+
+[node name="Connector" type="Area" parent="AudioAreas" index="12"]
 transform = Transform( -7.43671e-08, 0, 0.785707, 0, 3.53804, 0, -1.70132, 0, -3.43444e-08, 28.8638, 3.45003, -6.02311 )
 reverb_bus_enable = true
 reverb_bus_name = "REV_Large"
@@ -88,7 +142,7 @@ reverb_bus_uniformity = 0.67
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Connector" index="0"]
 shape = SubResource( 2 )
 
-[node name="Hallway2" type="Area" parent="AudioAreas" index="7"]
+[node name="Hallway2" type="Area" parent="AudioAreas" index="13"]
 transform = Transform( 6.02609, 0, 0, 0, 3.53804, 0, 0, 0, 1.14512, 31.5883, 3.45003, -19.2684 )
 reverb_bus_enable = true
 reverb_bus_name = "REV_Large"
@@ -98,7 +152,7 @@ reverb_bus_uniformity = 0.6
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Hallway2" index="0"]
 shape = SubResource( 2 )
 
-[node name="Classroom6" type="Area" parent="AudioAreas" index="8"]
+[node name="Classroom6" type="Area" parent="AudioAreas" index="14"]
 transform = Transform( 0.41197, 0, 0, 0, 2.56325, 0, 0, 0, 1.02988, 63.9966, 2.49343, -27.3024 )
 reverb_bus_enable = true
 reverb_bus_name = "REV_Small"
@@ -108,7 +162,7 @@ reverb_bus_uniformity = 0.2
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom6" index="0"]
 shape = SubResource( 2 )
 
-[node name="Classroom7" type="Area" parent="AudioAreas" index="9"]
+[node name="Classroom7" type="Area" parent="AudioAreas" index="15"]
 transform = Transform( 1.43024, 0, 0, 0, 2.6967, 0, 0, 0, 1.15974, 45.4704, 2.49661, -27.709 )
 reverb_bus_enable = true
 reverb_bus_name = "REV_Small"
@@ -118,7 +172,7 @@ reverb_bus_uniformity = 0.2
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom7" index="0"]
 shape = SubResource( 2 )
 
-[node name="Classroom8" type="Area" parent="AudioAreas" index="10"]
+[node name="Classroom8" type="Area" parent="AudioAreas" index="16"]
 transform = Transform( -7.43469e-08, 0, 1.21906, 0, 2.6967, 0, -1.70086, 0, -5.32869e-08, 22.4316, 2.49661, -33.279 )
 reverb_bus_enable = true
 reverb_bus_name = "REV_Small"
@@ -128,7 +182,7 @@ reverb_bus_uniformity = 0.2
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom8" index="0"]
 shape = SubResource( 2 )
 
-[node name="Classroom9" type="Area" parent="AudioAreas" index="11"]
+[node name="Classroom9" type="Area" parent="AudioAreas" index="17"]
 transform = Transform( -7.43469e-08, 0, 1.36251, 0, 2.6967, 0, -1.70086, 0, -5.95573e-08, 8.60737, 2.49661, -33.279 )
 reverb_bus_enable = true
 reverb_bus_name = "REV_Small"
@@ -136,66 +190,6 @@ reverb_bus_amount = 0.4
 reverb_bus_uniformity = 0.2
 
 [node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom9" index="0"]
-shape = SubResource( 2 )
-
-[node name="Classroom1" type="Area" parent="AudioAreas" index="6"]
-transform = Transform( 1, 0, 0, 0, 2.74879, 0, 0, 0, 0.922695, 0, 2.49661, 0 )
-reverb_bus_enable = true
-reverb_bus_name = "Large_Room"
-reverb_bus_amount = 0.2
-reverb_bus_uniformity = 0.29
-
-[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom1" index="0"]
-shape = SubResource( 2 )
-
-[node name="Classroom2" type="Area" parent="AudioAreas" index="7"]
-transform = Transform( 0.370657, 0, 0, 0, 1.80876, 0, 0, 0, 0.538813, 17.2126, 1.66564, 1.90248 )
-reverb_bus_enable = true
-reverb_bus_name = "Small_Room"
-reverb_bus_amount = 0.1
-reverb_bus_uniformity = 0.18
-
-[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom2" index="0"]
-shape = SubResource( 2 )
-
-[node name="Classroom3" type="Area" parent="AudioAreas" index="8"]
-transform = Transform( 0.375762, 0, 0, 0, 2.56325, 0, 0, 0, 0.862897, 37.0823, 2.49343, 0.357024 )
-reverb_bus_enable = true
-reverb_bus_name = "Small_Room"
-reverb_bus_amount = 0.17
-reverb_bus_uniformity = 0.18
-
-[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom3" index="0"]
-shape = SubResource( 2 )
-
-[node name="Classroom4" type="Area" parent="AudioAreas" index="9"]
-transform = Transform( 1.26884, 0, 0, 0, 2.6967, 0, 0, 0, 1.63842, 58.596, 2.49661, -3.46525 )
-reverb_bus_enable = true
-reverb_bus_name = "Large_Room"
-reverb_bus_amount = 0.45
-reverb_bus_uniformity = 0.29
-
-[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom4" index="0"]
-shape = SubResource( 2 )
-
-[node name="Classroom5" type="Area" parent="AudioAreas" index="10"]
-transform = Transform( 0.995118, 0, 0, 0, 2.69141, 0, 0, 0, 0.633703, 33.4553, 2.57943, 14.3433 )
-reverb_bus_enable = true
-reverb_bus_name = "Large_Room"
-reverb_bus_amount = 0.3
-reverb_bus_uniformity = 0.29
-
-[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Classroom5" index="0"]
-shape = SubResource( 2 )
-
-[node name="Hallway" type="Area" parent="AudioAreas" index="11"]
-transform = Transform( 4.66507, 0, 0, 0, 3.53804, 0, 0, 0, 0.665288, 33.3616, 3.45003, 7.8 )
-reverb_bus_enable = true
-reverb_bus_name = "Large_Room"
-reverb_bus_amount = 0.5
-reverb_bus_uniformity = 0.25
-
-[node name="CollisionShape" type="CollisionShape" parent="AudioAreas/Hallway" index="0"]
 shape = SubResource( 2 )
 
 [node name="AudioAreas" type="Spatial" parent="." index="1"]

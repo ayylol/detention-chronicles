@@ -1,5 +1,7 @@
 extends Spatial
 
+signal hitbox_on
+signal hitbox_off
 
 var currently_swinging = false
 
@@ -44,6 +46,11 @@ func play_bat_swing_RtoL():
 	bat_swing_player.set_pitch_scale(rand_range(0.9, 1.1))
 	bat_swing_player.play()
 	
+func hitbox_on():
+	emit_signal("hitbox_on")
+func hitbox_off():
+	emit_signal("hitbox_off")
+
 func _on_AnimationPlayer_animation_started(anim_name):
 	currently_swinging = true
 	$Timer.start(0.4)
