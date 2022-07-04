@@ -27,6 +27,7 @@ var acceleration
 var forward_or_backward = 0
 var left_or_right = 0
 
+onready var principle = $"../Nav/Principle"
 onready var head = $Head
 
 var _reset_fb = false
@@ -139,6 +140,7 @@ func _on_bat_hitbox_off():
 
 func _on_bat_hitbox_on():
 	$BatHitbox/CollisionShape.disabled = false
+	principle.change_sus_meter(2)
 
 
 func _on_BatHitbox_body_entered(body):

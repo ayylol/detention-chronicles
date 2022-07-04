@@ -17,64 +17,64 @@ agent/radius = 0.89
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( -0.687468, 0, 0.726215, 0, 1, 0, -0.726215, 0, -0.687468, 62.6996, 1.12836, -9.23932 )
 
-[node name="Navigation" type="Navigation" parent="."]
+[node name="Nav" type="Navigation" parent="."]
 
-[node name="NavMesh" type="NavigationMeshInstance" parent="Navigation"]
+[node name="NavMesh" type="NavigationMeshInstance" parent="Nav"]
 navmesh = SubResource( 3 )
 
-[node name="PointsOfInterest" type="Spatial" parent="Navigation/NavMesh"]
+[node name="PointsOfInterest" type="Spatial" parent="Nav/NavMesh"]
 
-[node name="Spatial1" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial1" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.336, 0.69224 )
 
-[node name="Spatial2" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial2" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6926, 1.36436, 9.50347 )
 
-[node name="Spatial3" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial3" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.9802, 1.36436, -18.6967 )
 
-[node name="Spatial4" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial4" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.77968, 1.36436, -18.7041 )
 
-[node name="Spatial5" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial5" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.85517, 1.36436, -21.0417 )
 
-[node name="Spatial6" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial6" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.94418, 1.36436, -41.9952 )
 
-[node name="Spatial7" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial7" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.7581, 1.36436, -32.4303 )
 
-[node name="Spatial8" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial8" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.638, 1.36436, -21.3835 )
 
-[node name="Spatial9" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial9" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.3875, 1.36436, -21.3835 )
 
-[node name="Spatial10" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial10" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.0597, 1.36436, -19.9178 )
 
-[node name="Spatial11" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial11" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44.0356, 1.36436, -30.6343 )
 
-[node name="Spatial12" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial12" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7346, 1.36436, -18.8525 )
 
-[node name="Spatial13" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial13" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.0626, 1.36436, 8.91938 )
 
-[node name="Spatial14" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial14" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52.1489, 1.36436, 9.90342 )
 
-[node name="Spatial15" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial15" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 63.6294, 1.36436, -6.49729 )
 
-[node name="Spatial16" type="Spatial" parent="Navigation/NavMesh/PointsOfInterest"]
+[node name="Spatial16" type="Spatial" parent="Nav/NavMesh/PointsOfInterest"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.4929, 1.36436, 10.2314 )
 
-[node name="School" parent="Navigation/NavMesh" instance=ExtResource( 3 )]
+[node name="School" parent="Nav/NavMesh" instance=ExtResource( 3 )]
 
-[node name="Principle" parent="Navigation" instance=ExtResource( 2 )]
+[node name="Principle" parent="Nav" instance=ExtResource( 2 )]
 transform = Transform( -0.0144502, -4.81867e-05, 0.999896, -0.00201819, 0.999998, 1.90442e-05, -0.999894, -0.0020177, -0.0144503, 11.6051, 0.1361, 9.09675 )
 
 [node name="Music" type="Spatial" parent="."]
