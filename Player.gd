@@ -1,10 +1,11 @@
 extends KinematicBody
 
 # audio-related stuff - begin
-
+onready var bat_object = $Head/Camera/bat
 onready var footstep_timer = $FootstepTimer
 onready var footstep_player = $FootstepPlayer
-
+onready var bat_collision = $Head/BatHitbox/CollisionShape;
+var swingingstate =  true;
 var last_footstep_index = 0
 
 const FOOTSTEP = {
@@ -34,7 +35,7 @@ var _reset_lr = false
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	$BatHitbox/CollisionShape.disabled = true
+	bat_collision.disabled = true
 
 func _input(event):
 	if (event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED):
@@ -134,12 +135,34 @@ func _on_FootstepTimer_timeout():
 
 
 func _on_bat_hitbox_off():
-	$BatHitbox/CollisionShape.disabled = true
-
+		bat_collision.disabled = true
 
 func _on_bat_hitbox_on():
-	$BatHitbox/CollisionShape.disabled = false
-
+		bat_collision.disabled = false
 
 func _on_BatHitbox_body_entered(body):
-	print(body)
+	
+	#Will switch states to alternate the direction of the object that is hit, hence why the swingstate variable changes from true to false.
+
+	var aim = $Head.get_global_transform().basis;	
+	var forward = -aim.z
+	var backward = aim.z
+	var up = aim.y 
+	var down = -aim.y
+	var left = -aim.x
+	var right = aim.x
+	
+	var left_launch_direction = left + forward + up*.35 
+
+	var right_launch_direction = right + forward + up*.35
+	
+	if body.has_method("add_central_force") and not bat_object.is_first_swing:
+		body.add_central_force(left_launch_direction*1000)
+		
+	elif body.has_method("add_central_force") and bat_object.is_first_swing:
+		body.add_central_force(right_launch_direction*1000)
+
+	if body.has_method("break"):	
+		body.break()
+	
+
