@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/bat.glb-834162b1049f0a4c4f3de32d47ff1adf.scn"
+path="res://.import/principle.glb-c8a6df974e744a4f12afdece0efe3a9e.scn"
 
 [deps]
 
-source_file="res://bat.glb"
-dest_files=[ "res://.import/bat.glb-834162b1049f0a4c4f3de32d47ff1adf.scn" ]
+source_file="res://enemies/principle.glb"
+dest_files=[ "res://.import/principle.glb-c8a6df974e744a4f12afdece0efe3a9e.scn" ]
 
 [params]
 

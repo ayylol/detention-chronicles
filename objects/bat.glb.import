@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/chairpaintbroken.glb-5829a28841a24d3f197132362d7ac59f.scn"
+path="res://.import/bat.glb-20ab832f62ac63095d2998739326f1a4.scn"
 
 [deps]
 
-source_file="res://chairpaintbroken.glb"
-dest_files=[ "res://.import/chairpaintbroken.glb-5829a28841a24d3f197132362d7ac59f.scn" ]
+source_file="res://objects/bat.glb"
+dest_files=[ "res://.import/bat.glb-20ab832f62ac63095d2998739326f1a4.scn" ]
 
 [params]
 
