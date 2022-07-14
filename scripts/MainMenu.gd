@@ -5,3 +5,6 @@ func _on_PlayButton_pressed():
 
 func _on_QuitGame_pressed():
 	get_tree().quit()
+
+func _on_OptionsButton_pressed():
+	$PauseMenu.visible = true

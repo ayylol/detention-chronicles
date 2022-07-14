@@ -43,7 +43,6 @@ func _input(event):
 		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 		head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
 		head.rotation.x = clamp(head.rotation.x, deg2rad(-90), deg2rad(90))
-		
 
 func get_direction():
 	# stopping movement

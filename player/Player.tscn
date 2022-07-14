@@ -11,6 +11,7 @@ radius = 0.309659
 height = 0.523307
 
 [node name="Player" type="KinematicBody"]
+pause_mode = 2
 script = ExtResource( 1 )
 
 [node name="Head" type="Spatial" parent="."]
