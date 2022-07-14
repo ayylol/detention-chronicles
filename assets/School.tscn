@@ -15,6 +15,7 @@ data = PoolVector3Array( 27.3321, 3.669, -15.5579, 17.6815, 5.0935, -15.5579, 27
 [sub_resource type="CubeMesh" id=3]
 
 [node name="School" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1.3053, 0, 0, 0, 1, 0, 0, 0 )
 
 [node name="AudioAreas" type="Spatial" parent="." index="0"]
 

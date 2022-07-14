@@ -1802,7 +1802,7 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0958
 shape = SubResource( 10 )
 
 [node name="MoveTimer" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="FootstepPlayer" type="AudioStreamPlayer3D" parent="."]
@@ -1810,4 +1810,12 @@ unit_db = 5.378
 unit_size = 6.0
 bus = "SFX"
 
+[node name="LowerState" type="Timer" parent="."]
+one_shot = true
+
+[node name="IncreaseState" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="timeout" from="MoveTimer" to="." method="_on_MoveTimer_timeout"]
+[connection signal="timeout" from="LowerState" to="." method="_on_LowerState_timeout"]
+[connection signal="timeout" from="IncreaseState" to="." method="_on_IncreaseState_timeout"]
