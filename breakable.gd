@@ -12,6 +12,8 @@ export(NodePath) var node_path
 func _ready():
 	$normal.visible = true
 	$broken.visible = false
+	var labelNode = get_node("../ObjectsDestroyed")
+	self.connect("objectCounter", labelNode, "on_objectDestroyed")
 	
 func break():
 	if brokencondition == false: 
@@ -22,8 +24,7 @@ func break():
 		queue_free()
 		emit_signal("objectCounter")
 		
-				
-
+			
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

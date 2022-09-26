@@ -18,7 +18,7 @@ const FOOTSTEP = {
 export var speed = 10.0
 export var ground_acceleration = 10.0
 export var air_acceleration = 6.0
-export var jump = 5
+export var jump = 7.6
 export var mouse_sensitivity = 0.5
 
 var fall = 0

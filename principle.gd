@@ -1,4 +1,6 @@
 extends KinematicBody
+signal losecondition
+
 enum State {
 	CHASE,
 	SEARCH,
@@ -171,4 +173,9 @@ func _on_MoveTimer_timeout():
 	calc_state()
 	get_target()
 	move_to(_target.global_transform.origin)
+
+func _on_Area_body_entered(body):
+	if body.name ==  "Player":
+		emit_signal("losecondition")
+
 
